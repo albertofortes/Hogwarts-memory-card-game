@@ -96,7 +96,7 @@ type Props = {
   setFlippedCount: (flippedCount: number) => void,
   game: any[],
   flippedIndexes: any[],
-  setFlippedIndexes: ([]) => void
+  setFlippedIndexes: (any:[]) => void
 }
 
 const Card: FC<Props> = ({
@@ -129,17 +129,18 @@ const Card: FC<Props> = ({
     } else if (flippedIndexes[2] === false && id === 0) {
       setFlippedIndexes([])
     }
-  }, [flippedIndexes])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [flippedIndexes, id, setFlippedIndexes])
 
-  const onCardClick = () => {
+  function onCardClick() {
     cardFlipSoundAudio.play();
 
-    setFlipped(!flipped)
-    setFlippedCount(flippedCount + 1)
-    const newIndexes = [...flippedIndexes] as any
-    newIndexes.push(id)
-    setFlippedIndexes(newIndexes)
-    console.log(flippedCount)
+    setFlipped(!flipped);
+    setFlippedCount(flippedCount + 1);
+    const newIndexes = [...flippedIndexes] as any;
+    newIndexes.push(id);
+    setFlippedIndexes(newIndexes);
+    console.log(flippedCount);
   }
 
   return (

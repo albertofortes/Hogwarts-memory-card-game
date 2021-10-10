@@ -147,6 +147,7 @@ const MemoryGame: FC<Props> = ({
         }, 5)
       }, 500)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [game])
 
   /**
