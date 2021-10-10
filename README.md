@@ -7,7 +7,7 @@ A simple memory card game for learning and fun purpuses to my son.
 - Styled Components: https://styled-components.com/
 - Local storage
 - Sounds with events
-- PWA [ToDo]
+- PWA
 
 ## How to play
 
