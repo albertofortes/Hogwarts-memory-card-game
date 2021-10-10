@@ -140,7 +140,6 @@ const Card: FC<Props> = ({
     const newIndexes = [...flippedIndexes] as any;
     newIndexes.push(id);
     setFlippedIndexes(newIndexes);
-    console.log(flippedCount);
   }
 
   return (
