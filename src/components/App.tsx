@@ -5,9 +5,6 @@ import GlobalStyle from "./globalStyles"
 import MemoryGame from "./MemoryGame"
 import NoAllowed from "./NoAllowed"
 
-// https://www.code-boost.com/react-memory-game/
-// https://hp-api.herokuapp.com/ <- images
-
 const AppWrapper = styled('div')`
   height: 100vh;
   display: flex;

@@ -85,7 +85,7 @@ const MemoryGame: FC<Props> = ({
   const cardMatchesSoundAudio = new Audio(`./${cardMatchesSoundUrl.default}`)
 
   const getPosters = async () => {
-    const response = await fetch(`http://hp-api.herokuapp.com/api/characters`)
+    const response = await fetch(`https://hp-api.herokuapp.com/api/characters`)
     const json = await response.json()
     //setPosters(json.children.map(it => it.data))
     setPosters(json)
