@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from "react"
 import styled from "styled-components"
 
+import cursorActiveImg from '../assets/cursor-active.png';
 import cardBack from '../assets/card-shadow.png';
 import cardFront from '../assets/card-front.png';
 
@@ -44,6 +45,7 @@ const StyledCard = styled('div')`
   }
 
   &.card--clicked {
+    pointer-events: none;
     transform: rotateY(180deg);
 
     .card__side--back {
@@ -57,7 +59,7 @@ const StyledCard = styled('div')`
     max-height: 100%;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+    cursor: url(${cursorActiveImg}) , auto; 
     will-change: transform, opacity;
     transition: opacity .5s;
   }

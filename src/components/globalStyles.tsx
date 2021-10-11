@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import bodyBg from '../assets/bg.jpeg';
+import cursorImg from '../assets/cursor.png';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
@@ -70,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #190000;
     color: #E8C39E;
     opacity: 0.6;
-
+    
     &::before {
       content: ' ';
       display: block;
@@ -83,6 +84,11 @@ const GlobalStyle = createGlobalStyle`
       opacity: .1;
       background: transparent url(${bodyBg}) center center no-repeat;
       background-size: cover;
+    }
+
+    &,
+    a {
+      cursor: url(${cursorImg}) , auto; 
     }
   }
 
