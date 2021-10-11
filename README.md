@@ -1,6 +1,7 @@
 # Harry Potter Memory card game
 
-A simple memory card game for learning and fun purpuses to my son.
+A simple memory card game for learning and fun purpuses to my son:
+https://relaxed-davinci-e07a75.netlify.app/
 
 - Images: Harry Potter API at https://hp-api.herokuapp.com/
 - React Create App + TypeScript
